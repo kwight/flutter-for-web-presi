@@ -1,28 +1,12 @@
 import 'package:flutter_web/cupertino.dart';
-import 'package:meetup_2/util/helpers.dart';
+import 'package:meetup_2/widgets/slide.dart';
 
 class Home extends StatelessWidget {
-  final _focusNode = FocusNode();
-
   @override
   Widget build(BuildContext context) {
-    FocusScope.of(context).requestFocus(_focusNode);
-
-    return CupertinoPageScaffold(
-      child: RawKeyboardListener(
-        child: Container(
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text('Home'),
-              ],
-            ),
-          ),
-        ),
-        onKey: (RawKeyEvent event) => onKey(context, event, '/', '/1'),
-        focusNode: _focusNode,
-      ),
+    return Slide(
+      leftRoute: '/',
+      rightRoute: '/1',
     );
   }
 }

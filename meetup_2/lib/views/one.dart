@@ -1,5 +1,5 @@
 import 'package:flutter_web/cupertino.dart';
-import 'package:meetup_2/util/helpers.dart';
+import 'package:meetup_2/widgets/slide.dart';
 
 class One extends StatelessWidget {
   final _focusNode = FocusNode();
@@ -8,21 +8,9 @@ class One extends StatelessWidget {
   Widget build(BuildContext context) {
     FocusScope.of(context).requestFocus(_focusNode);
 
-    return CupertinoPageScaffold(
-      child: RawKeyboardListener(
-        child: Container(
-          child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text('One'),
-              ],
-            ),
-          ),
-        ),
-        onKey: (RawKeyEvent event) => onKey(context, event, '/', '/2'),
-        focusNode: _focusNode,
-      ),
+    return Slide(
+      leftRoute: '/',
+      rightRoute: '/2',
     );
   }
 }
