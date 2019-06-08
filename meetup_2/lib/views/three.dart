@@ -15,28 +15,28 @@ class Three extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text('Home'),
+                Text('Three'),
               ],
             ),
           ),
         ),
         onKey: (RawKeyEvent event) {
-          if (event.runtimeType != RawKeyDownEvent) {
+          if (event.runtimeType != RawKeyUpEvent) {
             return;
           }
           var keyCode = event.logicalKey.keyId.toString();
           switch (keyCode) {
             case KeyCode.left:
-              Navigator.pushNamed(context, '/1');
+              Navigator.pushReplacementNamed(context, '/2');
               break;
             case KeyCode.right:
-              Navigator.pushNamed(context, '/1');
+              Navigator.pushReplacementNamed(context, '/4');
               break;
             case KeyCode.up:
-              Navigator.pushNamed(context, '/');
+              Navigator.pushReplacementNamed(context, '/');
               break;
             case KeyCode.down:
-              Navigator.pushNamed(context, '/1');
+              Navigator.pushReplacementNamed(context, '/5');
               break;
             default:
           }

@@ -21,16 +21,16 @@ class Home extends StatelessWidget {
           ),
         ),
         onKey: (RawKeyEvent event) {
-          if (event.runtimeType != RawKeyDownEvent) {
+          if (event.runtimeType != RawKeyUpEvent) {
             return;
           }
           var keyCode = event.logicalKey.keyId.toString();
           switch (keyCode) {
             case KeyCode.right:
-              Navigator.pushNamed(context, '/1');
+              Navigator.pushReplacementNamed(context, '/1');
               break;
             case KeyCode.down:
-              Navigator.pushNamed(context, '/5');
+              Navigator.pushReplacementNamed(context, '/5');
               break;
             default:
           }
