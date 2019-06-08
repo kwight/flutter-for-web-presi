@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["flutter_web|lib/cupertino.dart","meetup_2|lib/util/helpers.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[],"hasMain":false}
