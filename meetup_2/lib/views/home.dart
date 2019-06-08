@@ -20,21 +20,7 @@ class Home extends StatelessWidget {
             ),
           ),
         ),
-        onKey: (RawKeyEvent event) {
-          if (event.runtimeType != RawKeyUpEvent) {
-            return;
-          }
-          var keyCode = event.logicalKey.keyId.toString();
-          switch (keyCode) {
-            case KeyCode.right:
-              Navigator.pushReplacementNamed(context, '/1');
-              break;
-            case KeyCode.down:
-              Navigator.pushReplacementNamed(context, '/5');
-              break;
-            default:
-          }
-        },
+        onKey: (RawKeyEvent event) => onKey(context, event, '/', '/1'),
         focusNode: _focusNode,
       ),
     );

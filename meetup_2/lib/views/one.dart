@@ -20,27 +20,7 @@ class One extends StatelessWidget {
             ),
           ),
         ),
-        onKey: (RawKeyEvent event) {
-          if (event.runtimeType != RawKeyUpEvent) {
-            return;
-          }
-          var keyCode = event.logicalKey.keyId.toString();
-          switch (keyCode) {
-            case KeyCode.left:
-              Navigator.pushReplacementNamed(context, '/');
-              break;
-            case KeyCode.right:
-              Navigator.pushReplacementNamed(context, '/2');
-              break;
-            case KeyCode.up:
-              Navigator.pushReplacementNamed(context, '/');
-              break;
-            case KeyCode.down:
-              Navigator.pushReplacementNamed(context, '/5');
-              break;
-            default:
-          }
-        },
+        onKey: (RawKeyEvent event) => onKey(context, event, '/', '/2'),
         focusNode: _focusNode,
       ),
     );
