@@ -2,7 +2,7 @@ import 'package:flutter_web/cupertino.dart';
 import 'package:flutter_web/material.dart';
 import 'package:meetup_2/widgets/slide.dart';
 
-class Home extends StatelessWidget {
+class Welcome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Slide(

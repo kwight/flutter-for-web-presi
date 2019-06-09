@@ -14,24 +14,24 @@ void main() => runApp(CupertinoApp(
       onGenerateRoute: (RouteSettings settings) {
         switch (settings.name) {
           case '/1':
-            return FadeRoute(page: One());
+            return FadeRoute(page: WhatIs());
           case '/2':
-            return FadeRoute(page: Two());
+            return FadeRoute(page: WhatIsNot());
           case '/3':
-            return FadeRoute(page: Three());
+            return FadeRoute(page: GettingStarted());
           case '/4':
-            return FadeRoute(page: Four());
+            return FadeRoute(page: WhatWorks());
           case '/5':
-            return FadeRoute(page: Five());
+            return FadeRoute(page: WhatDoesntWork());
           case '/6':
-            return FadeRoute(page: Six());
+            return FadeRoute(page: WhatLooksLike());
           case '/7':
-            return FadeRoute(page: Seven());
+            return FadeRoute(page: Future());
           case '/8':
-            return FadeRoute(page: Eight());
+            return FadeRoute(page: ThankYou());
           case '/':
           default:
-            return FadeRoute(page: Home());
+            return FadeRoute(page: Welcome());
         }
       },
       debugShowCheckedModeBanner: false,
