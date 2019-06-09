@@ -20,6 +20,6 @@ class FadeRoute extends PageRouteBuilder {
                 opacity: animation,
                 child: child,
               ),
-          transitionDuration: Duration(milliseconds: 200),
+          transitionDuration: Duration(milliseconds: 140),
         );
 }
