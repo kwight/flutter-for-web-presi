@@ -6,7 +6,9 @@ class Two extends StatelessWidget {
   Widget build(BuildContext context) {
     return Slide(
       body: <Widget>[
-        Text('Two'),
+        Text('It is NOT a new way to make websites.'),
+        Text('(Yet. We\'ll get into that.)'),
+        Text('😐'),
       ],
       leftRoute: '/1',
       rightRoute: '/3',

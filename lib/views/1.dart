@@ -6,7 +6,10 @@ class One extends StatelessWidget {
   Widget build(BuildContext context) {
     return Slide(
       body: <Widget>[
-        Text('One'),
+        Text('What is Flutter for Web?'),
+        Text(
+            'Flutter for Web allows you to deploy Flutter apps to browsers on the Web.'),
+        Text('🎉'),
       ],
       leftRoute: '/',
       rightRoute: '/2',

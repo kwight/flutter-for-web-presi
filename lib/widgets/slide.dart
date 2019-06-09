@@ -41,8 +41,8 @@ class Slide extends StatelessWidget {
                 if (_includeMasthead)
                   Row(
                     children: <Widget>[
-                      Text('Flutter Vancouver | meetup.com/Flutter-Vancouver'),
-                      Text('Kirk Wight | @kwight | kwight.ca'),
+                      Text('Flutter Vancouver • meetup.com/Flutter-Vancouver'),
+                      Text('Kirk Wight • @kwight • kwight.ca'),
                     ],
                   ),
               ],
