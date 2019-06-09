@@ -1,4 +1,4 @@
-define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/src/cupertino/action_sheet', 'packages/meetup_2/util/animations', 'packages/meetup_2/views/one', 'packages/meetup_2/views/two', 'packages/meetup_2/views/three', 'packages/meetup_2/views/four', 'packages/meetup_2/views/five', 'packages/meetup_2/views/home'], function(dart_sdk, animation, action_sheet, animations, one, two, three, four, five, home) {
+define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/src/cupertino/action_sheet', 'packages/meetup_2/util/animations', 'packages/meetup_2/views/1', 'packages/meetup_2/views/2', 'packages/meetup_2/views/3', 'packages/meetup_2/views/4', 'packages/meetup_2/views/5', 'packages/meetup_2/views/0'], function(dart_sdk, animation, action_sheet, animations, $1, $2, $3, $4, $5, $0) {
   'use strict';
   const core = dart_sdk.core;
   const dart = dart_sdk.dart;
@@ -8,12 +8,12 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/src/
   const src__widgets__navigator = animation.src__widgets__navigator;
   const src__cupertino__app = action_sheet.src__cupertino__app;
   const util__animations = animations.util__animations;
-  const views__one = one.views__one;
-  const views__two = two.views__two;
-  const views__three = three.views__three;
-  const views__four = four.views__four;
-  const views__five = five.views__five;
-  const views__home = home.views__home;
+  const views__1 = $1.views__1;
+  const views__2 = $2.views__2;
+  const views__3 = $3.views__3;
+  const views__4 = $4.views__4;
+  const views__5 = $5.views__5;
+  const views__0 = $0.views__0;
   const main = Object.create(dart.library);
   let RouteSettingsToFadeRoute = () => (RouteSettingsToFadeRoute = dart.constFn(dart.fnType(util__animations.FadeRoute, [src__widgets__navigator.RouteSettings])))();
   let const$;
@@ -37,28 +37,28 @@ define(['dart_sdk', 'packages/flutter_web/animation', 'packages/flutter_web/src/
         switch (settings.name) {
           case "/1":
           {
-            return new util__animations.FadeRoute.new({page: new views__one.One.new({$creationLocationd_0dea112b090073317d4: const$0 || (const$0 = dart.const(new src__widgets__widget_inspector._Location.new({line: 14, column: 36, file: "org-dartlang-app:///packages/meetup_2/main.dart", parameterLocations: const$ || (const$ = dart.constList([], src__widgets__widget_inspector._Location))})))})});
+            return new util__animations.FadeRoute.new({page: new views__1.One.new({$creationLocationd_0dea112b090073317d4: const$0 || (const$0 = dart.const(new src__widgets__widget_inspector._Location.new({line: 14, column: 36, file: "org-dartlang-app:///packages/meetup_2/main.dart", parameterLocations: const$ || (const$ = dart.constList([], src__widgets__widget_inspector._Location))})))})});
           }
           case "/2":
           {
-            return new util__animations.FadeRoute.new({page: new views__two.Two.new({$creationLocationd_0dea112b090073317d4: const$2 || (const$2 = dart.const(new src__widgets__widget_inspector._Location.new({line: 16, column: 36, file: "org-dartlang-app:///packages/meetup_2/main.dart", parameterLocations: const$1 || (const$1 = dart.constList([], src__widgets__widget_inspector._Location))})))})});
+            return new util__animations.FadeRoute.new({page: new views__2.Two.new({$creationLocationd_0dea112b090073317d4: const$2 || (const$2 = dart.const(new src__widgets__widget_inspector._Location.new({line: 16, column: 36, file: "org-dartlang-app:///packages/meetup_2/main.dart", parameterLocations: const$1 || (const$1 = dart.constList([], src__widgets__widget_inspector._Location))})))})});
           }
           case "/3":
           {
-            return new util__animations.FadeRoute.new({page: new views__three.Three.new({$creationLocationd_0dea112b090073317d4: const$4 || (const$4 = dart.const(new src__widgets__widget_inspector._Location.new({line: 18, column: 36, file: "org-dartlang-app:///packages/meetup_2/main.dart", parameterLocations: const$3 || (const$3 = dart.constList([], src__widgets__widget_inspector._Location))})))})});
+            return new util__animations.FadeRoute.new({page: new views__3.Three.new({$creationLocationd_0dea112b090073317d4: const$4 || (const$4 = dart.const(new src__widgets__widget_inspector._Location.new({line: 18, column: 36, file: "org-dartlang-app:///packages/meetup_2/main.dart", parameterLocations: const$3 || (const$3 = dart.constList([], src__widgets__widget_inspector._Location))})))})});
           }
           case "/4":
           {
-            return new util__animations.FadeRoute.new({page: new views__four.Four.new({$creationLocationd_0dea112b090073317d4: const$6 || (const$6 = dart.const(new src__widgets__widget_inspector._Location.new({line: 20, column: 36, file: "org-dartlang-app:///packages/meetup_2/main.dart", parameterLocations: const$5 || (const$5 = dart.constList([], src__widgets__widget_inspector._Location))})))})});
+            return new util__animations.FadeRoute.new({page: new views__4.Four.new({$creationLocationd_0dea112b090073317d4: const$6 || (const$6 = dart.const(new src__widgets__widget_inspector._Location.new({line: 20, column: 36, file: "org-dartlang-app:///packages/meetup_2/main.dart", parameterLocations: const$5 || (const$5 = dart.constList([], src__widgets__widget_inspector._Location))})))})});
           }
           case "/5":
           {
-            return new util__animations.FadeRoute.new({page: new views__five.Five.new({$creationLocationd_0dea112b090073317d4: const$8 || (const$8 = dart.const(new src__widgets__widget_inspector._Location.new({line: 22, column: 36, file: "org-dartlang-app:///packages/meetup_2/main.dart", parameterLocations: const$7 || (const$7 = dart.constList([], src__widgets__widget_inspector._Location))})))})});
+            return new util__animations.FadeRoute.new({page: new views__5.Five.new({$creationLocationd_0dea112b090073317d4: const$8 || (const$8 = dart.const(new src__widgets__widget_inspector._Location.new({line: 22, column: 36, file: "org-dartlang-app:///packages/meetup_2/main.dart", parameterLocations: const$7 || (const$7 = dart.constList([], src__widgets__widget_inspector._Location))})))})});
           }
           case "/":
           default:
           {
-            return new util__animations.FadeRoute.new({page: new views__home.Home.new({$creationLocationd_0dea112b090073317d4: const$10 || (const$10 = dart.const(new src__widgets__widget_inspector._Location.new({line: 25, column: 36, file: "org-dartlang-app:///packages/meetup_2/main.dart", parameterLocations: const$9 || (const$9 = dart.constList([], src__widgets__widget_inspector._Location))})))})});
+            return new util__animations.FadeRoute.new({page: new views__0.Home.new({$creationLocationd_0dea112b090073317d4: const$10 || (const$10 = dart.const(new src__widgets__widget_inspector._Location.new({line: 25, column: 36, file: "org-dartlang-app:///packages/meetup_2/main.dart", parameterLocations: const$9 || (const$9 = dart.constList([], src__widgets__widget_inspector._Location))})))})});
           }
         }
       }, RouteSettingsToFadeRoute()), debugShowCheckedModeBanner: false, $creationLocationd_0dea112b090073317d4: const$14 || (const$14 = dart.const(new src__widgets__widget_inspector._Location.new({line: 10, column: 23, file: "org-dartlang-app:///packages/meetup_2/main.dart", parameterLocations: const$13 || (const$13 = dart.constList([const$11 || (const$11 = dart.const(new src__widgets__widget_inspector._Location.new({line: 11, column: 7, name: "onGenerateRoute"}))), const$12 || (const$12 = dart.const(new src__widgets__widget_inspector._Location.new({line: 28, column: 7, name: "debugShowCheckedModeBanner"})))], src__widgets__widget_inspector._Location))})))}));
