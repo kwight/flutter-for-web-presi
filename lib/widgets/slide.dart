@@ -26,27 +26,38 @@ class Slide extends StatelessWidget {
 
     return CupertinoPageScaffold(
       child: RawKeyboardListener(
-        child: Container(
-          child: Center(
-            child: Column(
-              children: <Widget>[
-                if (_includeMasthead)
-                  Row(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              if (_includeMasthead)
+                Container(
+                  decoration:
+                      BoxDecoration(color: Color.fromRGBO(47, 185, 246, 1)),
+                  padding: EdgeInsets.all(20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       Text('Flutter for Web'),
                       Text('June 11, 2019'),
                     ],
                   ),
-                ..._body,
-                if (_includeMasthead)
-                  Row(
+                ),
+              ..._body,
+              if (_includeMasthead)
+                Container(
+                  decoration:
+                      BoxDecoration(color: Color.fromRGBO(5, 90, 157, 1)),
+                  padding: EdgeInsets.all(20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       Text('Flutter Vancouver • meetup.com/Flutter-Vancouver'),
                       Text('Kirk Wight • @kwight • kwight.ca'),
                     ],
                   ),
-              ],
-            ),
+                ),
+            ],
           ),
         ),
         onKey: (RawKeyEvent event) =>
