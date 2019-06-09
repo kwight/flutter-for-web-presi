@@ -1,12 +1,12 @@
 import 'package:flutter_web/cupertino.dart';
 import 'package:meetup_2/widgets/slide.dart';
 
-class Five extends StatelessWidget {
+class Six extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Slide(
       body: <Widget>[
-        Text('What doesn\'t work?'),
+        Text('What does it look like?'),
         Text('• plugins (they have platform-specific code'),
         Text('• Flutter packages (only while forked)'),
         Text('• links (anchors to other webpages)'),
@@ -17,8 +17,8 @@ class Five extends StatelessWidget {
         Text('• "Not all Flutter APIs are implemented yet."'),
         Text('• "Performance work is only just beginning."'),
       ],
-      leftRoute: '/4',
-      rightRoute: '/5',
+      leftRoute: '/5',
+      rightRoute: '/7',
     );
   }
 }

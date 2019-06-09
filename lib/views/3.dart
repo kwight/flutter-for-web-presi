@@ -6,7 +6,10 @@ class Three extends StatelessWidget {
   Widget build(BuildContext context) {
     return Slide(
       body: <Widget>[
-        Text('Three'),
+        Text('Getting Started'),
+        Text('• Meet minimum Flutter and Dart SDK requirements.'),
+        Text('• New apps can be created from within supported IDEs.'),
+        Text('• Existing apps will need a migration process.'),
       ],
       leftRoute: '/2',
       rightRoute: '/4',

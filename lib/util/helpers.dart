@@ -24,7 +24,7 @@ void onKey(BuildContext context, RawKeyEvent event, String leftRoute,
       Navigator.pushReplacementNamed(context, '/');
       break;
     case KeyCode.down:
-      Navigator.pushReplacementNamed(context, '/5');
+      Navigator.pushReplacementNamed(context, '/9');
       break;
     default:
   }

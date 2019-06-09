@@ -6,7 +6,17 @@ class Four extends StatelessWidget {
   Widget build(BuildContext context) {
     return Slide(
       body: <Widget>[
-        Text('Four'),
+        Text('What works?'),
+        Text('• a LOT 😱'),
+        Text('• animations'),
+        Text('• responsive layout, media queries'),
+        Text('• routing*, deep linking*'),
+        Text('• forms, input******* CHECK THIS'),
+        Text('• fonts, assets'),
+        Text('• pure Dart packages'),
+        Text('• hot restart*'),
+        Text('• Dart DevTools'),
+        Text('• Chrome DevTools debugging'),
       ],
       leftRoute: '/3',
       rightRoute: '/5',
