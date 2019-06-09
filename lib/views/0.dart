@@ -1,15 +1,15 @@
 import 'package:flutter_web/cupertino.dart';
 import 'package:meetup_2/widgets/slide.dart';
 
-class One extends StatelessWidget {
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Slide(
       body: <Widget>[
-        Text('One'),
+        Text('Welcome!'),
       ],
       leftRoute: '/',
-      rightRoute: '/2',
+      rightRoute: '/1',
     );
   }
 }

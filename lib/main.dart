@@ -1,10 +1,10 @@
 import 'package:flutter_web/cupertino.dart';
-import 'package:meetup_2/views/home.dart';
-import 'package:meetup_2/views/one.dart';
-import 'package:meetup_2/views/two.dart';
-import 'package:meetup_2/views/three.dart';
-import 'package:meetup_2/views/four.dart';
-import 'package:meetup_2/views/five.dart';
+import 'package:meetup_2/views/0.dart';
+import 'package:meetup_2/views/1.dart';
+import 'package:meetup_2/views/2.dart';
+import 'package:meetup_2/views/3.dart';
+import 'package:meetup_2/views/4.dart';
+import 'package:meetup_2/views/5.dart';
 import 'package:meetup_2/util/animations.dart';
 
 void main() => runApp(CupertinoApp(
