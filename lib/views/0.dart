@@ -13,5 +13,3 @@ class Home extends StatelessWidget {
     );
   }
 }
-
-// left: 105, up: 106, right: 107, down: 108
