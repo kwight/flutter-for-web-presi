@@ -28,7 +28,9 @@ class Slide extends StatelessWidget {
       child: RawKeyboardListener(
         child: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: _includeMasthead
+                ? MainAxisAlignment.spaceBetween
+                : MainAxisAlignment.start,
             children: <Widget>[
               if (_includeMasthead)
                 Container(
@@ -38,8 +40,16 @@ class Slide extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
-                      Text('Flutter for Web'),
-                      Text('June 11, 2019'),
+                      Text(
+                        'Flutter for Web',
+                        style:
+                            TextStyle(color: Color.fromRGBO(255, 255, 255, 1)),
+                      ),
+                      Text(
+                        'June 11, 2019',
+                        style:
+                            TextStyle(color: Color.fromRGBO(255, 255, 255, 1)),
+                      ),
                     ],
                   ),
                 ),
@@ -52,8 +62,16 @@ class Slide extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
-                      Text('Flutter Vancouver • meetup.com/Flutter-Vancouver'),
-                      Text('Kirk Wight • @kwight • kwight.ca'),
+                      Text(
+                        'Flutter Vancouver • meetup.com/Flutter-Vancouver',
+                        style:
+                            TextStyle(color: Color.fromRGBO(255, 255, 255, 1)),
+                      ),
+                      Text(
+                        'Kirk Wight • @kwight • kwight.ca',
+                        style:
+                            TextStyle(color: Color.fromRGBO(255, 255, 255, 1)),
+                      ),
                     ],
                   ),
                 ),
