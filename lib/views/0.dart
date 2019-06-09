@@ -1,4 +1,5 @@
 import 'package:flutter_web/cupertino.dart';
+import 'package:flutter_web/material.dart';
 import 'package:meetup_2/widgets/slide.dart';
 
 class Home extends StatelessWidget {
@@ -6,7 +7,11 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Slide(
       body: <Widget>[
-        Text('Welcome!'),
+        FlutterLogo(),
+        Text('Flutter for Web'),
+        Text('Kirk Wight'),
+        Text('June 11, 2019'),
+        Text('Flutter Vancouver'),
       ],
       leftRoute: '/',
       rightRoute: '/1',
