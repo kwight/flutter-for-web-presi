@@ -15,6 +15,7 @@ class Home extends StatelessWidget {
       ],
       leftRoute: '/',
       rightRoute: '/1',
+      includeMasthead: false,
     );
   }
 }

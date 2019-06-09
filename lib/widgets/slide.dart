@@ -5,15 +5,18 @@ class Slide extends StatelessWidget {
   Slide({
     Key key,
     @required List<Widget> body,
+    bool includeMasthead = true,
     @required String leftRoute,
     @required String rightRoute,
   })  : _body = body,
+        _includeMasthead = includeMasthead,
         _leftRoute = leftRoute,
         _rightRoute = rightRoute,
         super(key: key);
 
   final _focusNode = FocusNode();
   final List<Widget> _body;
+  final bool _includeMasthead;
   final String _leftRoute;
   final String _rightRoute;
 
@@ -26,8 +29,23 @@ class Slide extends StatelessWidget {
         child: Container(
           child: Center(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: _body,
+              children: <Widget>[
+                if (_includeMasthead)
+                  Row(
+                    children: <Widget>[
+                      Text('Flutter for Web'),
+                      Text('June 11, 2019'),
+                    ],
+                  ),
+                ..._body,
+                if (_includeMasthead)
+                  Row(
+                    children: <Widget>[
+                      Text('Flutter Vancouver | meetup.com/Flutter-Vancouver'),
+                      Text('Kirk Wight | @kwight | kwight.ca'),
+                    ],
+                  ),
+              ],
             ),
           ),
         ),
