@@ -5,8 +5,8 @@ class WhatLooksLike extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Slide(
+      heading: 'What does it look like?',
       body: <Widget>[
-        Text('What does it look like?'),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[

@@ -5,8 +5,8 @@ class WhatWorks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Slide(
+      heading: 'What works?',
       body: <Widget>[
-        Text('What works?'),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[

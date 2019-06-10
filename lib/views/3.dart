@@ -5,8 +5,8 @@ class GettingStarted extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Slide(
+      heading: 'Getting Started',
       body: <Widget>[
-        Text('Getting Started'),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[

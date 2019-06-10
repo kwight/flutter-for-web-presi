@@ -7,10 +7,12 @@ class Slide extends StatelessWidget {
   Slide({
     Key key,
     @required List<Widget> body,
+    String heading,
     bool includeMasthead = true,
     @required String leftRoute,
     @required String rightRoute,
   })  : _body = body,
+        _heading = heading,
         _includeMasthead = includeMasthead,
         _leftRoute = leftRoute,
         _rightRoute = rightRoute,
@@ -18,6 +20,7 @@ class Slide extends StatelessWidget {
 
   final List<Widget> _body;
   final FocusNode _focusNode = FocusNode();
+  final String _heading;
   final bool _includeMasthead;
   final String _leftRoute;
   final String _rightRoute;
@@ -33,6 +36,7 @@ class Slide extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               if (_includeMasthead) Header(),
+              if (_heading != null) Text(_heading),
               ..._body,
               if (_includeMasthead) Footer(),
             ],

@@ -5,8 +5,8 @@ class Future extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Slide(
+      heading: 'The Future',
       body: <Widget>[
-        Text('The Future'),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
