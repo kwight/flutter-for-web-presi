@@ -30,9 +30,7 @@ class Slide extends StatelessWidget {
       child: RawKeyboardListener(
         child: Center(
           child: Column(
-            mainAxisAlignment: _includeMasthead
-                ? MainAxisAlignment.spaceBetween
-                : MainAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               if (_includeMasthead) Header(),
               ..._body,

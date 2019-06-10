@@ -7,11 +7,16 @@ class WhatLooksLike extends StatelessWidget {
     return Slide(
       body: <Widget>[
         Text('What does it look like?'),
-        Text('• project creation'),
-        Text('• workflow'),
-        Text('• markup'),
-        Text('• routing'),
-        Text('• build sizes'),
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text('• project creation'),
+            Text('• workflow'),
+            Text('• markup'),
+            Text('• routing'),
+            Text('• build sizes'),
+          ],
+        ),
       ],
       leftRoute: '/5',
       rightRoute: '/7',
