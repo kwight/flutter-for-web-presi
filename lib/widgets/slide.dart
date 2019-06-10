@@ -16,8 +16,8 @@ class Slide extends StatelessWidget {
         _rightRoute = rightRoute,
         super(key: key);
 
-  final _focusNode = FocusNode();
   final List<Widget> _body;
+  final FocusNode _focusNode = FocusNode();
   final bool _includeMasthead;
   final String _leftRoute;
   final String _rightRoute;
