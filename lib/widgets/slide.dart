@@ -1,5 +1,7 @@
 import 'package:flutter_web/cupertino.dart';
 import 'package:meetup_2/util/helpers.dart';
+import 'package:meetup_2/widgets/footer.dart';
+import 'package:meetup_2/widgets/header.dart';
 
 class Slide extends StatelessWidget {
   Slide({
@@ -32,49 +34,9 @@ class Slide extends StatelessWidget {
                 ? MainAxisAlignment.spaceBetween
                 : MainAxisAlignment.start,
             children: <Widget>[
-              if (_includeMasthead)
-                Container(
-                  decoration:
-                      BoxDecoration(color: Color.fromRGBO(47, 185, 246, 1)),
-                  padding: EdgeInsets.all(20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Text(
-                        'Flutter for Web',
-                        style:
-                            TextStyle(color: Color.fromRGBO(255, 255, 255, 1)),
-                      ),
-                      Text(
-                        'June 11, 2019',
-                        style:
-                            TextStyle(color: Color.fromRGBO(255, 255, 255, 1)),
-                      ),
-                    ],
-                  ),
-                ),
+              if (_includeMasthead) Header(),
               ..._body,
-              if (_includeMasthead)
-                Container(
-                  decoration:
-                      BoxDecoration(color: Color.fromRGBO(5, 90, 157, 1)),
-                  padding: EdgeInsets.all(20),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      Text(
-                        'Flutter Vancouver • meetup.com/Flutter-Vancouver',
-                        style:
-                            TextStyle(color: Color.fromRGBO(255, 255, 255, 1)),
-                      ),
-                      Text(
-                        'Kirk Wight • @kwight • kwight.ca',
-                        style:
-                            TextStyle(color: Color.fromRGBO(255, 255, 255, 1)),
-                      ),
-                    ],
-                  ),
-                ),
+              if (_includeMasthead) Footer(),
             ],
           ),
         ),
