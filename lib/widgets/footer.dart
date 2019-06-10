@@ -8,18 +8,19 @@ class Footer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(color: Color.fromRGBO(5, 90, 157, 1)),
+      decoration:
+          BoxDecoration(color: CupertinoTheme.of(context).barBackgroundColor),
       padding: EdgeInsets.all(20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Text(
             'Flutter Vancouver • meetup.com/Flutter-Vancouver',
-            style: TextStyle(color: Color.fromRGBO(255, 255, 255, 1)),
+            style: CupertinoTheme.of(context).textTheme.navTitleTextStyle,
           ),
           Text(
             'Kirk Wight • @kwight • kwight.ca',
-            style: TextStyle(color: Color.fromRGBO(255, 255, 255, 1)),
+            style: CupertinoTheme.of(context).textTheme.navTitleTextStyle,
           ),
         ],
       ),

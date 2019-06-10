@@ -8,18 +8,18 @@ class Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(color: Color.fromRGBO(47, 185, 246, 1)),
+      decoration: BoxDecoration(color: CupertinoTheme.of(context).primaryColor),
       padding: EdgeInsets.all(20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Text(
             'Flutter for Web',
-            style: TextStyle(color: Color.fromRGBO(255, 255, 255, 1)),
+            style: CupertinoTheme.of(context).textTheme.navTitleTextStyle,
           ),
           Text(
             'June 11, 2019',
-            style: TextStyle(color: Color.fromRGBO(255, 255, 255, 1)),
+            style: CupertinoTheme.of(context).textTheme.navTitleTextStyle,
           ),
         ],
       ),

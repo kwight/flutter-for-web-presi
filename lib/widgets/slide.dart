@@ -36,7 +36,13 @@ class Slide extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               if (_includeMasthead) Header(),
-              if (_heading != null) Text(_heading),
+              if (_heading != null)
+                Text(
+                  _heading,
+                  style: CupertinoTheme.of(context)
+                      .textTheme
+                      .navLargeTitleTextStyle,
+                ),
               ..._body,
               if (_includeMasthead) Footer(),
             ],
