@@ -21,9 +21,14 @@ class WhatIsNot extends StatelessWidget {
           ),
         ),
         Text('(Yet. We\'ll get into that.)'),
-        Text(
-          '🤔',
-          style: CupertinoTheme.of(context).textTheme.navActionTextStyle,
+        Padding(
+          padding: EdgeInsets.only(
+            top: 30,
+          ),
+          child: Text(
+            '🤔',
+            style: CupertinoTheme.of(context).textTheme.navActionTextStyle,
+          ),
         ),
       ],
       leftRoute: '/1',

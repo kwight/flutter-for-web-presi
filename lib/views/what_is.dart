@@ -9,10 +9,17 @@ class WhatIs extends StatelessWidget {
       body: <Widget>[
         Text(
             'Flutter for web allows you to deploy Flutter apps to browsers on the web.'),
-        Text(
-          '🎉',
-          style: CupertinoTheme.of(context).textTheme.navActionTextStyle,
-        ),
+        Expanded(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                '🎉',
+                style: CupertinoTheme.of(context).textTheme.navActionTextStyle,
+              ),
+            ],
+          ),
+        )
       ],
       leftRoute: '/',
       rightRoute: '/2',
