@@ -1,4 +1,5 @@
 import 'package:flutter_web/cupertino.dart';
+import 'package:meetup_2/widgets/footnotes.dart';
 import 'package:meetup_2/widgets/slide.dart';
 
 class GettingStarted extends StatelessWidget {
@@ -15,22 +16,11 @@ class GettingStarted extends StatelessWidget {
             Text('• Existing apps will need a migration process.'),
           ],
         ),
-        Padding(
-          padding: EdgeInsets.only(
-            bottom: 20,
-          ),
-          child: Column(
-            children: <Widget>[
-              Text(
-                'Getting started: https://github.com/flutter/flutter_web#getting-started',
-                style: CupertinoTheme.of(context).textTheme.tabLabelTextStyle,
-              ),
-              Text(
-                'Migration: https://github.com/flutter/flutter_web/blob/master/docs/migration_guide.md',
-                style: CupertinoTheme.of(context).textTheme.tabLabelTextStyle,
-              ),
-            ],
-          ),
+        Footnotes(
+          notes: [
+            'Getting started: https://github.com/flutter/flutter_web#getting-started',
+            'Migration: https://github.com/flutter/flutter_web/blob/master/docs/migration_guide.md',
+          ],
         ),
       ],
       leftRoute: '/2',
