@@ -14,13 +14,43 @@ class Footer extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          Text(
-            'Flutter Vancouver • meetup.com/Flutter-Vancouver',
-            style: CupertinoTheme.of(context).textTheme.navTitleTextStyle,
+          RichText(
+            text: TextSpan(
+              text: 'Flutter Vancouver ',
+              style: CupertinoTheme.of(context).textTheme.navTitleTextStyle,
+              children: <TextSpan>[
+                TextSpan(
+                  text: '•',
+                  style: TextStyle(
+                    color: CupertinoTheme.of(context).primaryColor,
+                  ),
+                ),
+                TextSpan(text: ' meetup.com/Flutter-Vancouver'),
+              ],
+            ),
           ),
-          Text(
-            'Kirk Wight • @kwight • kwight.ca',
-            style: CupertinoTheme.of(context).textTheme.navTitleTextStyle,
+          RichText(
+            textAlign: TextAlign.end,
+            text: TextSpan(
+              text: 'Kirk Wight ',
+              style: CupertinoTheme.of(context).textTheme.navTitleTextStyle,
+              children: <TextSpan>[
+                TextSpan(
+                  text: '•',
+                  style: TextStyle(
+                    color: CupertinoTheme.of(context).primaryColor,
+                  ),
+                ),
+                TextSpan(text: ' @kwight '),
+                TextSpan(
+                  text: '•',
+                  style: TextStyle(
+                    color: CupertinoTheme.of(context).primaryColor,
+                  ),
+                ),
+                TextSpan(text: ' kwight.ca'),
+              ],
+            ),
           ),
         ],
       ),
