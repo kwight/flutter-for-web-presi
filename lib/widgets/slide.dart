@@ -37,13 +37,25 @@ class Slide extends StatelessWidget {
             children: <Widget>[
               if (_includeMasthead) Header(),
               if (_heading != null)
-                Text(
-                  _heading,
-                  style: CupertinoTheme.of(context)
-                      .textTheme
-                      .navLargeTitleTextStyle,
+                SizedBox(
+                  height: 200,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        _heading,
+                        style: CupertinoTheme.of(context)
+                            .textTheme
+                            .navLargeTitleTextStyle,
+                      ),
+                    ],
+                  ),
                 ),
-              ..._body,
+              Expanded(
+                child: Column(
+                  children: _body,
+                ),
+              ),
               if (_includeMasthead) Footer(),
             ],
           ),
