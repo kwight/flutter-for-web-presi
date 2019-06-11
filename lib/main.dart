@@ -19,6 +19,7 @@ void main() => runApp(CupertinoApp(
             textStyle: TextStyle(
               color: Color.fromRGBO(110, 114, 116, 1),
               fontSize: 30,
+              height: 2,
             )),
       ),
     ));
