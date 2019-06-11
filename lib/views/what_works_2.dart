@@ -10,19 +10,6 @@ class WhatWorks2 extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            RichText(
-              text: TextSpan(
-                text: '• a ',
-                style: DefaultTextStyle.of(context).style,
-                children: <TextSpan>[
-                  TextSpan(
-                    text: 'lot',
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  TextSpan(text: ' 😍'),
-                ],
-              ),
-            ),
             Text('• pure Dart packages'),
             Text('• hot restart*'),
             Text('• Dart DevTools'),

@@ -12,7 +12,6 @@ class WhatDoesntWork2 extends StatelessWidget {
           children: <Widget>[
             Text('• stateful hot reload'),
             Text('• stepthrough debugging in IDEs'),
-            Text('• Chrome DevTools debugging'),
             Text('• "Not all Flutter APIs are implemented yet."'),
             Text('• "Performance work is only just beginning."'),
           ],

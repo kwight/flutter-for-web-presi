@@ -22,7 +22,7 @@ class WhatIsNot extends StatelessWidget {
         ),
         Text('(Yet. We\'ll get into that.)'),
         Text(
-          '😐',
+          '🤔',
           style: CupertinoTheme.of(context).textTheme.navActionTextStyle,
         ),
       ],
