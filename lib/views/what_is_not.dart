@@ -5,6 +5,7 @@ class WhatIsNot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Slide(
+      contentAlignment: MainAxisAlignment.start,
       heading: 'What is Flutter for web?',
       body: <Widget>[
         RichText(

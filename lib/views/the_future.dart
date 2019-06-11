@@ -18,6 +18,19 @@ class TheFuture extends StatelessWidget {
             Text('• automagic PWAs? 😱'),
           ],
         ),
+        Padding(
+          padding: EdgeInsets.only(
+            bottom: 20,
+          ),
+          child: Column(
+            children: <Widget>[
+              Text(
+                '"It\'s All Widgets" with Kevin Moore: https://itsallwidgets.com/podcast/episodes/27/kevin-moore',
+                style: CupertinoTheme.of(context).textTheme.tabLabelTextStyle,
+              ),
+            ],
+          ),
+        ),
       ],
       leftRoute: '/8',
       rightRoute: '/10',

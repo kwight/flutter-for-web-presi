@@ -16,6 +16,19 @@ class WhatDoesntWork2 extends StatelessWidget {
             Text('• "Performance work is only just beginning."'),
           ],
         ),
+        Padding(
+          padding: EdgeInsets.only(
+            bottom: 20,
+          ),
+          child: Column(
+            children: <Widget>[
+              Text(
+                'Limitations: https://github.com/flutter/flutter_web#limitations',
+                style: CupertinoTheme.of(context).textTheme.tabLabelTextStyle,
+              ),
+            ],
+          ),
+        ),
       ],
       leftRoute: '/6',
       rightRoute: '/8',

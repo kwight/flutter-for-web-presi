@@ -57,7 +57,7 @@ class Slide extends StatelessWidget {
               Expanded(
                 child: Column(
                   mainAxisAlignment:
-                      _contentAlignment ?? MainAxisAlignment.start,
+                      _contentAlignment ?? MainAxisAlignment.spaceBetween,
                   children: _body,
                 ),
               ),
