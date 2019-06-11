@@ -11,8 +11,7 @@ class Future extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text('• fork merged, Flutter packages working'),
-            Text(
-                '• mapping Flutter to Web APIs for local hardware (cameras, GPS, file access etc.)'),
+            Text('• mapping Flutter to Web APIs for local hardware'),
             Text('• plugins working with web-specific output'),
             Text('• improved accessibility and text handling'),
             Text('• performance work'),
