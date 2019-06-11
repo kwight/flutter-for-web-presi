@@ -10,11 +10,11 @@ class WhatLooksLike extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text('• project creation'),
-            Text('• workflow'),
             Text('• markup'),
             Text('• routing'),
             Text('• build sizes'),
+            Text('• project creation'),
+            Text('• workflow'),
           ],
         ),
       ],
