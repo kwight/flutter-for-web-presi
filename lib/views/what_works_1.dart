@@ -26,7 +26,7 @@ class WhatWorks1 extends StatelessWidget {
             Text('• animations'),
             Text('• responsive layout, media queries'),
             Text('• routing*, deep linking*'),
-            Text('• forms, input******* CHECK THIS'),
+            Text('• forms, input'),
             Text('• fonts, assets'),
           ],
         ),
