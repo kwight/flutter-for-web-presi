@@ -1,7 +1,7 @@
 import 'package:flutter_web/cupertino.dart';
 import 'package:meetup_2/widgets/slide.dart';
 
-class WhatDoesntWork extends StatelessWidget {
+class WhatDoesntWork1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Slide(
@@ -16,16 +16,11 @@ class WhatDoesntWork extends StatelessWidget {
             Text('• text selection, copy, paste'),
             Text('• clean SEO-friendly URLs (only hash fragments for now)'),
             Text('• accessibility? 🤷‍♂️'),
-            Text('• stateful hot reload'),
-            Text('• stepthrough debugging in IDEs'),
-            Text('• Chrome DevTools debugging'),
-            Text('• "Not all Flutter APIs are implemented yet."'),
-            Text('• "Performance work is only just beginning."'),
           ],
         ),
       ],
-      leftRoute: '/4',
-      rightRoute: '/6',
+      leftRoute: '/5',
+      rightRoute: '/7',
     );
   }
 }

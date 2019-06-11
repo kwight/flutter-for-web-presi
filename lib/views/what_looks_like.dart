@@ -18,8 +18,8 @@ class WhatLooksLike extends StatelessWidget {
           ],
         ),
       ],
-      leftRoute: '/5',
-      rightRoute: '/7',
+      leftRoute: '/7',
+      rightRoute: '/9',
     );
   }
 }

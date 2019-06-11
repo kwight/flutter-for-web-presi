@@ -10,8 +10,8 @@ class ThankYou extends StatelessWidget {
         Text('🙏'),
         Text('Questions?'),
       ],
-      leftRoute: '/7',
-      rightRoute: '/8',
+      leftRoute: '/9',
+      rightRoute: '/10',
       includeMasthead: false,
     );
   }

@@ -1,7 +1,7 @@
 import 'package:flutter_web/cupertino.dart';
 import 'package:meetup_2/widgets/slide.dart';
 
-class WhatWorks extends StatelessWidget {
+class WhatWorks1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Slide(
@@ -28,10 +28,6 @@ class WhatWorks extends StatelessWidget {
             Text('• routing*, deep linking*'),
             Text('• forms, input******* CHECK THIS'),
             Text('• fonts, assets'),
-            Text('• pure Dart packages'),
-            Text('• hot restart*'),
-            Text('• Dart DevTools'),
-            Text('• Chrome DevTools debugging'),
           ],
         ),
       ],
