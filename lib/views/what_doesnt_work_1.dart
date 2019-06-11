@@ -22,6 +22,7 @@ class WhatDoesntWork1 extends StatelessWidget {
         Footnotes(
           notes: [
             'a11y: https://www.reddit.com/r/FlutterDev/comments/blvrou/flutter_for_web_preview_goes_public/emsk3zx/',
+            'Filewatcher: https://github.com/filewatcher/filewatcher',
           ],
         ),
       ],
