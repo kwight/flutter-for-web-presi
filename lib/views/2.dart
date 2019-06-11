@@ -9,7 +9,10 @@ class WhatIsNot extends StatelessWidget {
       body: <Widget>[
         Text('It is NOT a new way to make websites.'),
         Text('(Yet. We\'ll get into that.)'),
-        Text('😐'),
+        Text(
+          '😐',
+          style: CupertinoTheme.of(context).textTheme.navActionTextStyle,
+        ),
       ],
       leftRoute: '/1',
       rightRoute: '/3',

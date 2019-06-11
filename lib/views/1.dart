@@ -8,8 +8,11 @@ class WhatIs extends StatelessWidget {
       heading: 'What is Flutter for Web?',
       body: <Widget>[
         Text(
-            'Flutter for Web allows you to deploy Flutter apps to browsers on the Web.'),
-        Text('🎉'),
+            'Flutter for web allows you to deploy Flutter apps to browsers on the web.'),
+        Text(
+          '🎉',
+          style: CupertinoTheme.of(context).textTheme.navActionTextStyle,
+        ),
       ],
       leftRoute: '/',
       rightRoute: '/2',
