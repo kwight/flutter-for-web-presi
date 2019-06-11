@@ -1,5 +1,6 @@
 import 'package:flutter_web/cupertino.dart';
 import 'package:meetup_2/widgets/slide.dart';
+import 'package:meetup_2/widgets/footnotes.dart';
 
 class WhatDoesntWork1 extends StatelessWidget {
   @override
@@ -18,18 +19,10 @@ class WhatDoesntWork1 extends StatelessWidget {
             Text('• accessibility? 🤷‍♂️'),
           ],
         ),
-        Padding(
-          padding: EdgeInsets.only(
-            bottom: 20,
-          ),
-          child: Column(
-            children: <Widget>[
-              Text(
-                'a11y: https://www.reddit.com/r/FlutterDev/comments/blvrou/flutter_for_web_preview_goes_public/emsk3zx/',
-                style: CupertinoTheme.of(context).textTheme.tabLabelTextStyle,
-              ),
-            ],
-          ),
+        Footnotes(
+          notes: [
+            'a11y: https://www.reddit.com/r/FlutterDev/comments/blvrou/flutter_for_web_preview_goes_public/emsk3zx/',
+          ],
         ),
       ],
       leftRoute: '/5',

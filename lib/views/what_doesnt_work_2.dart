@@ -1,5 +1,6 @@
 import 'package:flutter_web/cupertino.dart';
 import 'package:meetup_2/widgets/slide.dart';
+import 'package:meetup_2/widgets/footnotes.dart';
 
 class WhatDoesntWork2 extends StatelessWidget {
   @override
@@ -16,18 +17,10 @@ class WhatDoesntWork2 extends StatelessWidget {
             Text('• "Performance work is only just beginning."'),
           ],
         ),
-        Padding(
-          padding: EdgeInsets.only(
-            bottom: 20,
-          ),
-          child: Column(
-            children: <Widget>[
-              Text(
-                'Limitations: https://github.com/flutter/flutter_web#limitations',
-                style: CupertinoTheme.of(context).textTheme.tabLabelTextStyle,
-              ),
-            ],
-          ),
+        Footnotes(
+          notes: [
+            'Limitations: https://github.com/flutter/flutter_web#limitations',
+          ],
         ),
       ],
       leftRoute: '/6',

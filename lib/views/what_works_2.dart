@@ -1,5 +1,6 @@
 import 'package:flutter_web/cupertino.dart';
 import 'package:meetup_2/widgets/slide.dart';
+import 'package:meetup_2/widgets/footnotes.dart';
 
 class WhatWorks2 extends StatelessWidget {
   @override
@@ -16,18 +17,10 @@ class WhatWorks2 extends StatelessWidget {
             Text('• Chrome DevTools debugging'),
           ],
         ),
-        Padding(
-          padding: EdgeInsets.only(
-            bottom: 20,
-          ),
-          child: Column(
-            children: <Widget>[
-              Text(
-                'Dart DevTools: https://flutter.github.io/devtools/',
-                style: CupertinoTheme.of(context).textTheme.tabLabelTextStyle,
-              ),
-            ],
-          ),
+        Footnotes(
+          notes: [
+            'Dart DevTools: https://flutter.github.io/devtools/',
+          ],
         ),
       ],
       leftRoute: '/4',
