@@ -10,7 +10,19 @@ class WhatWorks extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text('• a LOT 😱'),
+            RichText(
+              text: TextSpan(
+                text: '• a ',
+                style: DefaultTextStyle.of(context).style,
+                children: <TextSpan>[
+                  TextSpan(
+                    text: 'lot',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  TextSpan(text: ' 😍'),
+                ],
+              ),
+            ),
             Text('• animations'),
             Text('• responsive layout, media queries'),
             Text('• routing*, deep linking*'),

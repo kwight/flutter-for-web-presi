@@ -7,7 +7,19 @@ class WhatIsNot extends StatelessWidget {
     return Slide(
       heading: 'What is Flutter for web?',
       body: <Widget>[
-        Text('It is NOT a new way to make websites.'),
+        RichText(
+          text: TextSpan(
+            text: 'It is ',
+            style: DefaultTextStyle.of(context).style,
+            children: <TextSpan>[
+              TextSpan(
+                text: 'not',
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              TextSpan(text: ' a new way to make websites.'),
+            ],
+          ),
+        ),
         Text('(Yet. We\'ll get into that.)'),
         Text(
           '😐',
