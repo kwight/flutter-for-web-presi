@@ -5,7 +5,7 @@ class WhatIsNot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Slide(
-      heading: 'What is Flutter for Web?',
+      heading: 'What is Flutter for web?',
       body: <Widget>[
         Text('It is NOT a new way to make websites.'),
         Text('(Yet. We\'ll get into that.)'),

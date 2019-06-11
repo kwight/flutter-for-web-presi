@@ -5,7 +5,7 @@ class WhatIs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Slide(
-      heading: 'What is Flutter for Web?',
+      heading: 'What is Flutter for web?',
       body: <Widget>[
         Text(
             'Flutter for web allows you to deploy Flutter apps to browsers on the web.'),
