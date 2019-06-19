@@ -10,9 +10,8 @@ class TheFuture extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text('• fork merged, Flutter packages working'),
+            Text('• fork merged, Flutter packages working, plugins'),
             Text('• mapping Flutter to Web APIs for local hardware'),
-            Text('• plugins working with web-specific output'),
             Text('• improved accessibility and text handling'),
             Text('• performance work'),
             Text('• automagic PWAs? 😱'),

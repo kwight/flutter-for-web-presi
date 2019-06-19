@@ -11,8 +11,7 @@ class WhatDoesntWork1 extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text('• plugins (they have platform-specific code)'),
-            Text('• Flutter packages (only while forked)'),
+            Text('• Flutter packages, plugins'),
             Text('• links (anchors to other webpages)'),
             Text('• text selection, copy, paste'),
             Text('• clean SEO-friendly URLs (only hash fragments for now)'),
@@ -22,7 +21,6 @@ class WhatDoesntWork1 extends StatelessWidget {
         Footnotes(
           notes: [
             'a11y: https://www.reddit.com/r/FlutterDev/comments/blvrou/flutter_for_web_preview_goes_public/emsk3zx/',
-            'Filewatcher: https://github.com/filewatcher/filewatcher',
           ],
         ),
       ],

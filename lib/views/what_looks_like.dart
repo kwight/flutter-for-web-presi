@@ -1,4 +1,5 @@
 import 'package:flutter_web/cupertino.dart';
+import 'package:meetup_2/widgets/footnotes.dart';
 import 'package:meetup_2/widgets/slide.dart';
 
 class WhatLooksLike extends StatelessWidget {
@@ -15,6 +16,11 @@ class WhatLooksLike extends StatelessWidget {
             Text('• build sizes'),
             Text('• project creation'),
             Text('• workflow'),
+          ],
+        ),
+        Footnotes(
+          notes: [
+            'Filewatcher: https://github.com/filewatcher/filewatcher',
           ],
         ),
       ],
