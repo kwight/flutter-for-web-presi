@@ -1,13 +1,14 @@
 import 'package:flutter_web/cupertino.dart';
+import 'package:meetup_2/widgets/footnote.dart';
 
 class Footnotes extends StatelessWidget {
   const Footnotes({
     Key key,
-    @required List<String> notes,
+    @required List<Footnote> notes,
   })  : _notes = notes,
         super(key: key);
 
-  final List<String> _notes;
+  final List<Footnote> _notes;
 
   @override
   Widget build(BuildContext context) {
@@ -17,11 +18,7 @@ class Footnotes extends StatelessWidget {
       ),
       child: Column(
         children: <Widget>[
-          for (var note in _notes)
-            Text(
-              note,
-              style: CupertinoTheme.of(context).textTheme.tabLabelTextStyle,
-            ),
+          ..._notes,
         ],
       ),
     );
