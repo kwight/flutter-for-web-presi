@@ -1,5 +1,7 @@
 import 'package:flutter_web/cupertino.dart';
 import 'package:meetup_2/widgets/slide.dart';
+import 'package:meetup_2/widgets/footnotes.dart';
+import 'package:meetup_2/widgets/footnote.dart';
 
 class TheFuture extends StatelessWidget {
   @override
@@ -17,18 +19,13 @@ class TheFuture extends StatelessWidget {
             Text('• automagic PWAs? 😱'),
           ],
         ),
-        Padding(
-          padding: EdgeInsets.only(
-            bottom: 20,
-          ),
-          child: Column(
-            children: <Widget>[
-              Text(
-                '"It\'s All Widgets" with Kevin Moore: https://itsallwidgets.com/podcast/episodes/27/kevin-moore',
-                style: CupertinoTheme.of(context).textTheme.tabLabelTextStyle,
-              ),
-            ],
-          ),
+        Footnotes(
+          notes: [
+            Footnote(
+              text: '"It\'s All Widgets" with Kevin Moore',
+              url: 'https://itsallwidgets.com/podcast/episodes/27/kevin-moore',
+            ),
+          ],
         ),
       ],
       leftRoute: '/8',

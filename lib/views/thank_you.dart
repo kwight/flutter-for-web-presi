@@ -1,5 +1,6 @@
 import 'package:flutter_web/cupertino.dart';
 import 'package:meetup_2/widgets/slide.dart';
+import 'dart:html' as html;
 
 class ThankYou extends StatelessWidget {
   @override
@@ -49,7 +50,11 @@ class ThankYou extends StatelessWidget {
                 height: 1.2,
               ),
             ),
-            Text('github.com/kwight/flutter-for-web-presi'),
+            GestureDetector(
+              onTap: () => html.window.location.href =
+                  'https://github.com/kwight/flutter-for-web-presi',
+              child: Text('github.com/kwight/flutter-for-web-presi'),
+            ),
           ],
         ),
       ],
