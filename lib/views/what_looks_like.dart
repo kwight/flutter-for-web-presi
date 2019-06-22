@@ -1,4 +1,5 @@
 import 'package:flutter_web/cupertino.dart';
+import 'package:meetup_2/widgets/footnote.dart';
 import 'package:meetup_2/widgets/footnotes.dart';
 import 'package:meetup_2/widgets/slide.dart';
 
@@ -20,7 +21,10 @@ class WhatLooksLike extends StatelessWidget {
         ),
         Footnotes(
           notes: [
-            'Filewatcher: https://github.com/filewatcher/filewatcher',
+            Footnote(
+              text: 'Filewatcher',
+              url: 'https://github.com/filewatcher/filewatcher',
+            ),
           ],
         ),
       ],

@@ -1,4 +1,5 @@
 import 'package:flutter_web/cupertino.dart';
+import 'package:meetup_2/widgets/footnote.dart';
 import 'package:meetup_2/widgets/footnotes.dart';
 import 'package:meetup_2/widgets/slide.dart';
 
@@ -18,8 +19,15 @@ class GettingStarted extends StatelessWidget {
         ),
         Footnotes(
           notes: [
-            'Getting started: https://github.com/flutter/flutter_web#getting-started',
-            'Migration: https://github.com/flutter/flutter_web/blob/master/docs/migration_guide.md',
+            Footnote(
+              text: 'Getting started',
+              url: 'https://github.com/flutter/flutter_web#getting-started',
+            ),
+            Footnote(
+              text: 'Migration',
+              url:
+                  'https://github.com/flutter/flutter_web/blob/master/docs/migration_guide.md',
+            ),
           ],
         ),
       ],

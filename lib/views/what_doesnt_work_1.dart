@@ -1,4 +1,5 @@
 import 'package:flutter_web/cupertino.dart';
+import 'package:meetup_2/widgets/footnote.dart';
 import 'package:meetup_2/widgets/slide.dart';
 import 'package:meetup_2/widgets/footnotes.dart';
 
@@ -20,7 +21,11 @@ class WhatDoesntWork1 extends StatelessWidget {
         ),
         Footnotes(
           notes: [
-            'a11y: https://www.reddit.com/r/FlutterDev/comments/blvrou/flutter_for_web_preview_goes_public/emsk3zx/',
+            Footnote(
+              text: 'a11y',
+              url:
+                  'https://www.reddit.com/r/FlutterDev/comments/blvrou/flutter_for_web_preview_goes_public/emsk3zx/',
+            ),
           ],
         ),
       ],

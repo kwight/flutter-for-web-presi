@@ -1,4 +1,5 @@
 import 'package:flutter_web/cupertino.dart';
+import 'package:meetup_2/widgets/footnote.dart';
 import 'package:meetup_2/widgets/slide.dart';
 import 'package:meetup_2/widgets/footnotes.dart';
 
@@ -19,7 +20,10 @@ class WhatDoesntWork2 extends StatelessWidget {
         ),
         Footnotes(
           notes: [
-            'Limitations: https://github.com/flutter/flutter_web#limitations',
+            Footnote(
+              text: 'Limitations',
+              url: 'https://github.com/flutter/flutter_web#limitations',
+            ),
           ],
         ),
       ],

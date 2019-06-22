@@ -1,4 +1,5 @@
 import 'package:flutter_web/cupertino.dart';
+import 'package:meetup_2/widgets/footnote.dart';
 import 'package:meetup_2/widgets/slide.dart';
 import 'package:meetup_2/widgets/footnotes.dart';
 
@@ -19,7 +20,10 @@ class WhatWorks2 extends StatelessWidget {
         ),
         Footnotes(
           notes: [
-            'Dart DevTools: https://flutter.github.io/devtools/',
+            Footnote(
+              text: 'Dart DevTools',
+              url: 'https://flutter.github.io/devtools/',
+            ),
           ],
         ),
       ],
